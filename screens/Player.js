@@ -11,7 +11,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 const Background = ({ children}) => {
     return (
         <LinearGradient
-            colors={['#464769', '#1B1A1F']}
+            colors={['#010D4C', '#F84E7E']}
             style={{
                 flex:1,
             }}
@@ -98,11 +98,11 @@ Controls.Slider = styled.View`
 `;
 
 Controls.Slider.CurrentTime = styled.Text`
-  color: #bbbbbb;
+  color: #FAFAFA;
 `;
 
 Controls.Slider.TotalTime = styled.Text`
-  color: #bbbbbb;
+  color: #FAFAFA;
 `;
 
 const AudioSlider = styled(Slider)`
@@ -165,9 +165,8 @@ export function PlayerScreen() {
                 52:07
               </Controls.Slider.TotalTime>
             </Controls.Slider>
-            <Icon name="play-circle" size={32} color="#FFFFFF"/>
             <Controls.Play>
-              
+                <Icon name="play-circle" size={50} color="#FFFFFF"/>
             </Controls.Play>
           </Controls>
         </PlayerArea>
