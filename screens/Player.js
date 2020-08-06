@@ -90,6 +90,14 @@ const Controls = styled.View`
 Controls.Play = styled.TouchableOpacity`
 `;
 
+Controls.Back = styled.TouchableOpacity`
+    padding-right: 10px;
+`;
+
+Controls.Advance = styled.TouchableOpacity`
+    padding-left: 10px;
+`;
+
 Controls.Slider = styled.View`
   flex-basis: 100%;
   flex-direction: row;
@@ -165,9 +173,15 @@ export function PlayerScreen() {
                 52:07
               </Controls.Slider.TotalTime>
             </Controls.Slider>
+            <Controls.Back>
+                <Icon name="backward" size={24} color="#FFFFFF"/>
+            </Controls.Back>
             <Controls.Play>
                 <Icon name="play-circle" size={50} color="#FFFFFF"/>
             </Controls.Play>
+            <Controls.Advance>
+                <Icon name="forward" size={24} color="#FFFFFF"/>
+            </Controls.Advance>
           </Controls>
         </PlayerArea>
       </ScreenArea>
